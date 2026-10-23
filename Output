@@ -1,0 +1,31 @@
+## Project Output
+
+The project produced the following outputs:
+
+- **Dataset inspection:** The dataset contained 891 passenger records and 12 columns. 
+Missing values were found in `Age` (177), `Cabin` (687), and `Embarked` (2).
+- **Recorded survival counts:** 549 passengers did not survive, and 342 survived.
+- **Model evaluation:** Logistic regression achieved **80.4% accuracy**. 
+The SVM with an RBF kernel achieved **81.6% accuracy** on the selected test split.
+- **Confusion matrices:**
+
+  **Logistic regression**
+  ```text
+  [[98, 12],
+   [23, 46]]
+  ```
+
+  **SVM**
+  ```text
+  [[100, 10],
+   [23, 46]]
+  ```
+
+  Rows represent actual outcomes (`0` = did not survive, `1` = survived); columns represent predicted outcomes.
+
+- **New passenger prediction:** For the sample passenger entered, logistic regression predicted **Survived** with an estimated probability of **60.4%**.
+- **Chi-square test:** The test found evidence of an association between recorded sex and survival in the dataset. 
+The exact chi-square statistic, degrees of freedom, and p-value should be copied from the notebook output.
+
+These results are based on one train/test split and describe patterns in historical data; 
+they do not prove cause and effect or guarantee individual outcomes.
