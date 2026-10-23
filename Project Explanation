@@ -1,0 +1,20 @@
+## Project Explanation
+
+This project uses the Titanic passenger dataset to predict whether a passenger survived. 
+The dataset contains passenger details such as class, sex, age, family members aboard, fare, and embarkation port.
+The `Survived` column is the outcome: `0` means did not survive, and `1` means survived.
+
+First, the data was loaded into a JupyterLite notebook and inspected for missing values. 
+The selected features were then preprocessed: missing numeric and categorical values were filled, text categories were encoded, and numeric features were scaled. 
+The data was divided into training and test sets.
+
+Two models were trained: logistic regression and a support vector machine (SVM) with an RBF kernel. 
+Their test-set predictions were compared with the recorded outcomes using accuracy and confusion matrices. 
+Logistic regression achieved **80.4% accuracy**, while the SVM achieved **81.6% accuracy** on this particular split.
+
+The project also examined survival patterns by passenger class, age group, and cabin deck. 
+A chi-square test found evidence of an association between recorded sex and survival in the dataset. 
+Finally, the trained logistic regression model predicted survival for a sample passenger, returning **“Survived”** with an estimated probability of **60.4%**.
+
+This project demonstrates data preprocessing, classification, model evaluation, prediction, and hypothesis testing. 
+Its results describe patterns in historical data; they do not prove cause and effect or guarantee individual outcomes.
